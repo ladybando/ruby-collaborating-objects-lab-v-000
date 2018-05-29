@@ -1,3 +1,4 @@
+# <<<<<<< HEAD
 require 'pry'
 class Artist
   attr_accessor :name, :songs
@@ -26,6 +27,7 @@ class Artist
 
   def self.find(name)
     self.all.find {|artist| artist.name == name}
+    binding.pry
   end
 
   def self.create(name)
@@ -48,3 +50,7 @@ class Artist
   end
   end
 end
+# =======
+# class Artist
+# end
+# >>>>>>> 83385ee33991853be20a982054d81dd81bcdeb99
